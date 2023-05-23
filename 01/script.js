@@ -16,6 +16,6 @@ document.querySelector("#one").innerHTML = 777
 
 let a = document.querySelector(".header")
 
-a.innerHTML = "suka artem"
+a.innerHTML = "Terminator"
 
 
