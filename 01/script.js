@@ -1,33 +1,35 @@
-// let a = 5
+// document.querySelector("button").onclick = () => {
+// 	console.log(document.querySelector(".one").value)
+// //style
 //
-// if (a != 9) {
-// 	console.log("Yes")
-// } else {
-// 	console.log("No")
+// 	document.querySelector("button").style.backgroundColor =
+// 		document.querySelector(".one").value
+//
 // }
 
+// document.querySelector(".one").oninput = () => {
+// 	document.querySelector("span").innerHTML = document.querySelector(".one").value
+// }
+//
 
-const button = document.querySelector("button");
-const input = document.querySelector(".age");
+//
+// document.querySelector(".btn-1").onclick = () => {
+// 	console.log(document.querySelector(".i2").value)
+// 	let myCheckBox = document.querySelector(".i2");
+//
+// 	if (myCheckBox.checked) {
+// 		console.log("нажат")
+// 	} else {
+// 		console.log("не нажат")
+//
+// 	}
+// }
 
-button.onclick = () => {
-	let num = +input.value;
-	if (num >= 16 && num <= 60) {
-		console.log("Welcome")
-	} else if (num > 60) {
-		console.log("Older")
-	} else {
-		console.log("Bye")
-	}
-	switch (num) {
-		case 15:
-			console.log("потерпи")
-			break;
-		case 18:
-			console.log("можно пить алкоголь")
-			break;
-		default:
-			console.log("Okey")
-	}
+document.querySelector(".btn-2").onclick = (event) => {
+	event.preventDefault();
+// 	let text = document.querySelector("#two");
+// 	console.log(text.value)
+// 	text.value = "one"
+	let form = document.querySelector("form")
+	console.log(form)
 }
-
