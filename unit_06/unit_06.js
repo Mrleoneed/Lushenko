@@ -151,7 +151,13 @@ document.querySelector('.b-6').onclick = t6;
 // </p>
 
 function t7() {
-
+	let out = document.querySelector(".out-7")
+	for (let i = 0; i < 5; i++) {
+		for (let k = 1; k <= i; k++) {
+			out.innerHTML += "*"
+		}
+		out.innerHTML += "<br>"
+	}
 }
 
 document.querySelector('.b-7').onclick = t7;
@@ -168,7 +174,13 @@ document.querySelector('.b-7').onclick = t7;
 // </pre>
 // <p>Внешний цикл выводит перенос строки br. Вложенный цикл рисует звездочки. </p>
 function t8() {
-
+	let out = document.querySelector(".out-8")
+	for (let i = 0; i < 5; i++) {
+		for (let k = 4; i <= k; k--) {
+			out.innerHTML += "*"
+		}
+		out.innerHTML += "<br>"
+	}
 }
 
 document.querySelector('.b-8').onclick = t8;
@@ -185,7 +197,13 @@ document.querySelector('.b-8').onclick = t8;
 // </pre>
 // <p>Внешний цикл выводит перенос строки br. Вложенный цикл рисует цифры</p>
 function t9() {
-
+	let out = document.querySelector(".out-9")
+	for (let i = 0; i < 6; i++) {
+		for (let k = 1; k <= i; k++) {
+			out.innerHTML += k + " "
+		}
+		out.innerHTML += "<br>"
+	}
 }
 
 document.querySelector('.b-9').onclick = t9;
@@ -213,7 +231,19 @@ document.querySelector('.b-9').onclick = t9;
 // </p>
 
 function t10() {
+	let out = document.querySelector(".out-10")
+	for (let i = 0; i < 5; i++) {
+		for (let k = 1; k <= 10; k++) {
+			let num = i * 10 + k;
+			if (num < 10) {
+				out.innerHTML += `0${num}` + " "
+			} else {
+				out.innerHTML += `${num} `
+			}
+		}
+		out.innerHTML += "<br>"
 
+	}
 }
 
 document.querySelector('.b-10').onclick = t10;
