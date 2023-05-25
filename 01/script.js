@@ -1,35 +1,38 @@
-// document.querySelector("button").onclick = () => {
-// 	console.log(document.querySelector(".one").value)
-// //style
-//
-// 	document.querySelector("button").style.backgroundColor =
-// 		document.querySelector(".one").value
-//
-// }
+// div.style.background = "red";
 
-// document.querySelector(".one").oninput = () => {
-// 	document.querySelector("span").innerHTML = document.querySelector(".one").value
+// for (let i = 0; i < div.length; i++) {
+// 	div[i].style.background = "red"
+// 	div[i].onclick = two
 // }
 //
-
 //
-// document.querySelector(".btn-1").onclick = () => {
-// 	console.log(document.querySelector(".i2").value)
-// 	let myCheckBox = document.querySelector(".i2");
+// function two() {
+// 	console.log("Work")
+// }
 //
-// 	if (myCheckBox.checked) {
-// 		console.log("нажат")
-// 	} else {
-// 		console.log("не нажат")
+// let b = document.getElementsByClassName("one")
+// let c = document.getElementsByTagName("div")
+// console.log(b)
+// console.log(c)
 //
-// 	}
+// for (let i = 0; i < b.length; i++) {
+// 	b[i].style.border = "3px solid black"
 // }
 
-document.querySelector(".btn-2").onclick = (event) => {
-	event.preventDefault();
-// 	let text = document.querySelector("#two");
-// 	console.log(text.value)
-// 	text.value = "one"
-	let form = document.querySelector("form")
-	console.log(form)
+
+document.querySelector("button").onclick = () => {
+	let r = document.querySelectorAll("input[type='radio']")
+
+	for (let i = 0; i < r.length; i++) {
+		if (r[i].checked) {
+			console.log(r[i].value)
+		}
+	}
 }
+let out = ' '
+for (let i = 0; i < 10; i++) {
+	if (i === 6) continue
+	out += i + ' '
+	// if (i === 6) break
+}
+document.querySelector(".out").innerHTML = out;
