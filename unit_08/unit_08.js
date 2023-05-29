@@ -249,7 +249,12 @@ document.querySelector('.b-11').onclick = t11;
 
 
 function t12() {
-
+	let divs = document.querySelectorAll(".div-12");
+	let k = 0;
+	while (k < divs.length) {
+		divs[k].style.background = 'orange'
+		k++
+	}
 }
 
 document.querySelector('.b-12').onclick = t12;
