@@ -94,7 +94,11 @@ document.querySelector('.b-7').onclick = f7;
 let blocks8 = document.querySelectorAll('.out-8');
 
 function f8() {
-
+	let k = 0;
+	while (k < blocks8.length) {
+		blocks8[k].classList.toggle('bg-8')
+		k++
+	}
 
 	//внутри цикла blocks8[i].classList....
 }
