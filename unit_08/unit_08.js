@@ -229,6 +229,13 @@ document.querySelector('.b-10').onclick = t10;
 
 
 function t11() {
+	let out = document.querySelector(".out-11");
+	let divs = document.querySelectorAll(".div-11");
+	let k = 0;
+	while (k < divs.length) {
+		out.innerHTML += divs[k].innerHTML + " "
+		k++
+	}
 
 }
 
