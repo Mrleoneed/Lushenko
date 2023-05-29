@@ -128,6 +128,14 @@ document.querySelector('.b-6').onclick = t6;
 
 function
 t7() {
+	let out = document.querySelector(".out-7")
+	let input = +document.querySelector(".i-7").value;
+
+	let k = input + 1
+	while (k > 0) {
+		k = k - 1
+		out.innerHTML += k + " "
+	}
 
 }
 
