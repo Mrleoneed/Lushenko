@@ -192,7 +192,11 @@ document.querySelector('.b-13').onclick = f13;
 
 
 function f14() {
-
+	let out = document.querySelector(".out-14")
+	let a = document.createElement('div')
+	a.innerHTML = "14"
+	a.classList.add('bg-14')
+	out.prepend(a)
 }
 
 document.querySelector('.b-14').onclick = f14;
