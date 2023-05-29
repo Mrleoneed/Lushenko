@@ -307,13 +307,13 @@ document.querySelector('.b-14').onclick = t14;
 
 function t15() {
 	let out = document.querySelector(".out-15")
-	let i = 10;
+	let k = 10;
 	let j = 0;
 
-	while (i >= 0 || j <= 10) {
-		if (i >= 0) {
-			out.innerHTML += i + " ";
-			i--;
+	while (k >= 0 || j <= 10) {
+		if (k >= 0) {
+			out.innerHTML += k + " ";
+			k--;
 		}
 		if (j <= 10) {
 			out.innerHTML += j + " ";
