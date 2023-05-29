@@ -172,7 +172,12 @@ document.querySelector('.b-12').onclick = f12;
 // Добавьте кнопку .b-13, которая запускает функцию f13. Функция создает через createElement div c текстом pushMe и добавляет ему класс bg-13. Также, созданному div добавляется событие onclick, по которому выполняется функция f13_1. Созданный div добавляется в out-13.
 
 function f13() {
-
+	let out = document.querySelector(".out-13")
+	let a = document.createElement('div')
+	a.innerHTML = "push Me "
+	a.classList.add('bg-13')
+	a.onclick = f13_1
+	out.append(a)
 }
 
 function f13_1() {
