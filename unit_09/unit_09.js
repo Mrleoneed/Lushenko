@@ -146,6 +146,11 @@ for (let i = 0; i < div10.length; i++) {
 
 
 function f11() {
+	let out = document.querySelector(".out-11")
+	let a = document.createElement('div');
+	a.innerHTML = "25"
+	out.append(a)
+
 
 }
 
