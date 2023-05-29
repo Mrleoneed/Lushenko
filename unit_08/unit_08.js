@@ -131,10 +131,9 @@ t7() {
 	let out = document.querySelector(".out-7")
 	let input = +document.querySelector(".i-7").value;
 
-	let k = input + 1
-	while (k > 0) {
-		k = k - 1
-		out.innerHTML += k + " "
+	while (input > 0) {
+		out.innerHTML += input + " "
+		input--;
 	}
 
 }
@@ -158,7 +157,13 @@ document.querySelector('.b-7').onclick = t7;
 // Задача решается с помощью цикла while.
 
 function t8() {
-
+	let out = document.querySelector(".out-8")
+	let input1 = +document.querySelector(".i-81").value
+	let input2 = +document.querySelector(".i-82").value
+	while (input1 <= input2) {
+		out.innerHTML += input1 + ' '
+		input1++
+	}
 }
 
 document.querySelector('.b-8').onclick = t8;
