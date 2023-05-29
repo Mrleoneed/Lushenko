@@ -273,6 +273,9 @@ document.querySelector('.b-19').onclick = f19;
 // Добавьте кнопку .b-20, которая запускает функцию f20. Функция с помощью setAttribute присваивает атрибут title="go" в div.out-20.
 
 function f20() {
+	let out = document.querySelector('.out-20')
+	out.setAttribute('title', 'go')
+	out.innerHTML = out.getAttribute('title')
 
 }
 
