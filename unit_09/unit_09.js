@@ -62,7 +62,7 @@ document.querySelector('.b-5').onclick = f5;
 function f6() {
 	let out = document.querySelector(".out-6");
 	let a = document.querySelectorAll(".p-6").length
-	out.innerHTML = a
+	out.innerHTML += a
 
 }
 
@@ -74,8 +74,15 @@ document.querySelector('.b-6').onclick = f6;
 
 let blocks7 = document.querySelectorAll('.out-7');
 
+
 function f7() {
 	//внутри цикла blocks7[i].classList....
+
+	let k = 0;
+	while (k < blocks7.length) {
+		blocks7[k].classList.add('bg-7')
+		k++
+	}
 }
 
 document.querySelector('.b-7').onclick = f7;
@@ -87,6 +94,8 @@ document.querySelector('.b-7').onclick = f7;
 let blocks8 = document.querySelectorAll('.out-8');
 
 function f8() {
+
+
 	//внутри цикла blocks8[i].classList....
 }
 
