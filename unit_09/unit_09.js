@@ -150,8 +150,6 @@ function f11() {
 	let a = document.createElement('div');
 	a.innerHTML = "25"
 	out.append(a)
-
-
 }
 
 document.querySelector('.b-11').onclick = f11;
@@ -161,7 +159,11 @@ document.querySelector('.b-11').onclick = f11;
 
 
 function f12() {
-
+	let out = document.querySelector(".out-12")
+	let a = document.createElement('div')
+	a.innerHTML = '12';
+	a.classList.add('bg-12')
+	out.append(a)
 }
 
 document.querySelector('.b-12').onclick = f12;
