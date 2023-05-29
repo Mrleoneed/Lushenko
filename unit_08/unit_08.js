@@ -209,7 +209,12 @@ document.querySelector('.b-9').onclick = t9;
 
 function
 t10() {
-
+	let out = document.querySelector(".out-10")
+	let k = 1950
+	while (k < 2002) {
+		out.innerHTML += k + ' '
+		k = k + 2;
+	}
 }
 
 document.querySelector('.b-10').onclick = t10;
