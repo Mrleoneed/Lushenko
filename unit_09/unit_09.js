@@ -205,7 +205,11 @@ document.querySelector('.b-14').onclick = f14;
 // Добавьте кнопку .b-15, которая запускает функцию f15. Функция создает через createElement div c текстом 15 и добавляет ему класс bg-15. Созданный div добавляется в out-15 с помощью before.
 
 function f15() {
-
+	let out = document.querySelector(".out-15")
+	let a = document.createElement('div')
+	a.innerHTML = '15'
+	a.classList.add('bg-15')
+	out.before(a)
 }
 
 document.querySelector('.b-15').onclick = f15;
