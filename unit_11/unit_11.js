@@ -203,8 +203,11 @@ document.querySelector('.b-12').onclick = f12;
 let d13 = [6, 0, 22, 1, 4, 76];
 
 function f13() {
-
-	showArr('.out-13', d13);
+	let reversD13 = []
+	for (let i = d13.length - 1; i >= 0; i--) {
+		reversD13.push(d13[i])
+	}
+	showArr('.out-13', reversD13);
 }
 
 document.querySelector('.b-13').onclick = f13;
