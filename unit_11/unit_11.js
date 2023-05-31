@@ -159,6 +159,10 @@ document.querySelector('.b-10').onclick = f10;
 let d11 = [2, 3, 4, 5, 6, 7];
 
 function f11() {
+	let out = document.querySelector(".out-11")
+	let inputValue = +document.querySelector('.i-11').value
+
+	out.innerHTML = d11.indexOf(inputValue)
 
 }
 
