@@ -1,48 +1,20 @@
-let a = [4, 5, 6, 7];
-let b = [
-	[1, 2, 3],
-	[4, 5, 6],
-	[7, 8, 9],
-];
-console.log(b)
+const a = {
+	a: 5,
+	b: "Hello",
+	z2: "Hi",
+}
+a.yyyy = 555
+a.b = 'uuu'
+delete a.a
+console.log(a)
+console.log(a.z2)
 
-// for (let i = 0; i < b.length; i++) {
-// 	console.log(b[i])
-// 	let c = b[i];
-// 	for (let k = c.length - 1; k >= 0; k--) {
-// 		console.log(c[k])
-// 	}
-// }
-//
 
-let out = ''
-
-for (let i = 0; i < b.length; i++) {
-	for (let k = 0; k < b[i].length; k++) {
-		out += b[i][k] + ' '
-	}
-	out += '<br>'
+a.b = 'uuu'
+delete a.a
+// document.querySelector('.out').innerHTML = a;
+let out = '';
+for (let key in a) {
+	out += key + '---' + a[key] + '<br>'
 }
 document.querySelector('.out').innerHTML = out
-
-
-for (let i = 0; i < b.length; i++) {
-	for (let k = 0; k < b[i].length; k++) {
-		if (b[i][k] > 4) {
-			out += b[i][k] + ' '
-		}
-	}
-	out += '<br>'
-}
-document.querySelector('.out').innerHTML = out
-
-let d = [1, 0, 0, 0, 0];
-let k = 0;
-document.querySelector('button').onclick = () => {
-	if (k + 1 < d.length) {
-		d[k] = 0;
-		d[k + 1] = 1
-		k++
-	}
-	document.querySelector('.out-2').innerHTML = d
-}
