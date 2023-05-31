@@ -319,7 +319,13 @@ let d19 = ['Your', 'payment', 'method', 'will', 'automatically', 'be', 'charged'
 let maxString = '';
 
 function f19() {
-
+	let out = document.querySelector('.out-19')
+	for (let i = 0; i < d9.length; i++) {
+		if (d19[i].length > maxString.length) {
+			maxString = d19[i]
+		}
+	}
+	out.innerHTML = maxString
 }
 
 document.querySelector('.b-19').onclick = f19;
