@@ -178,6 +178,16 @@ document.querySelector('.b-11').onclick = f11;
 let d12 = [6, 62, 60, 70, 1, 5];
 
 function f12() {
+	let inputValue = +(document.querySelector('.i-12').value);
+	let out = ''
+	for (let i = 0; i < d12.length; i++) {
+		if (inputValue === d12[i]) {
+			out = i;
+		} else {
+			out = -1
+		}
+	}
+	document.querySelector('.out-12').textContent = out
 
 }
 
