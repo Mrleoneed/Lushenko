@@ -339,7 +339,8 @@ document.querySelector('.b-19').onclick = f19;
 let d20 = [4, 5, 6, 7, 8, 9, 10];
 
 function f20() {
-
+	let out = document.querySelector('.out-20')
+	out.innerHTML = d20.join('')
 }
 
 document.querySelector('.b-20').onclick = f20;
