@@ -261,7 +261,7 @@ let d161 = [5, 6, 7, 8, 9];
 let d162 = [23, 24, 56, 87];
 
 function f16() {
-
+	d16 = d161.concat(d162)
 	showArr('.out-16', d16);
 }
 
@@ -278,7 +278,14 @@ let d171 = ['a', 'b', 'c', 'd'];
 let d172 = [1, 2, 3, 4, 5];
 
 function f17() {
-
+	let newArray = []
+	for (let i = 0; i < d171.length; i++) {
+		newArray.push(d171[i])
+	}
+	for (let k = 0; k < d172.length; k++) {
+		newArray.push(d172[k])
+	}
+	d17 = newArray
 	showArr('.out-17', d17);
 }
 
@@ -294,7 +301,9 @@ document.querySelector('.b-17').onclick = f17;
 let d18 = ['b', 'c', '45', 'e', 'z', 'y'];
 
 function f18() {
-
+	let out = document.querySelector('.out-18')
+	let inputValue = document.querySelector('.i-18').value
+	out.innerHTML = d18.includes(inputValue)
 }
 
 document.querySelector('.b-18').onclick = f18;
