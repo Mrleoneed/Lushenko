@@ -1,22 +1,16 @@
-document.querySelector('.block-1').addEventListener('touchStart', myTouch);
-document.querySelector('.block-1').addEventListener('touchEnd', myTouchEnd);
-document.querySelector('.block-2').addEventListener('touchMove', myTouchMove);
+let a = 5;
+a = a * 2;
+try {
+	document.querySelector('.test').innerHTML = a;
+} catch (err) {
+	console.log(err)
+} finally {
+	console.log("Very good")
+}
+console.log(a)
+t1()
 
-function myTouch(event) {
-	console.log(event)
-	console.log('touch')
-	document.querySelector('.out-1').innerHTML += event.touches.length
-	document.querySelector('.out-2').innerHTML += 'work '
+function t1() {
+	console.log("Hello")
 }
 
-function myTouchEnd(event) {
-	document.querySelector('.out-2').innerHTML += 'end '
-}
-
-function myTouchMove(event) {
-	event.preventDefault()
-	console.log(event)
-	document.querySelector('.out-1').innerHTML += event.touches.length
-	document.querySelector('.out-2').innerHTML += 'end '
-	return false
-}
