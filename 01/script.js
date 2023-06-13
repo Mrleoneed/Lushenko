@@ -1,41 +1,15 @@
-document.querySelector('.one').onclick = function (e) {
-
-	console.log('click');
-}
-
-document.querySelector('.two').onclick = function () {
-	console.log('click2');
-}
-
-document.querySelector('.two').oncontextmenu = () => {
-	console.log('right button')
-	return false
-}
-
-// let w = 75;
-// document.querySelector('.three').onmousemove = () => {
-// 	document.querySelector('.three').style.width = w + 'px'
-// 	w++
-//
+// document.querySelector('.i-1').onkeypress = (e) => {
+// 	console.log(e)
+// 	console.log('charcode:' + e.charCode)
+// 	console.log('charcode:' + e.code)
+// 	console.log('key:' + e.key)
+// 	console.log('keyCode:' + e.keyCode)
 // }
 
-document.querySelector('.three').onmouseenter = () => {
-	document.querySelector('.three').style.background = 'red'
-}
+document.querySelector('.i-1').onkeydown = (e) => {
 
-document.querySelector('.three').onmouseleave = () => {
-	document.querySelector('.three').style.background = 'white'
-}
-
-document.querySelector('.three').onmousedown = () => {
-	document.querySelector('.three').style.background = 'pink'
-}
-
-document.querySelector('.three').onmouseup = () => {
-	document.querySelector('.three').style.background = 'yellow'
-}
-p = 10
-document.querySelector('button').onclick = () => {
-	p = p + 10;
-	document.querySelector("progress").value = p
+	console.log('charcode:' + e.charCode)
+	console.log('charcode:' + e.code)
+	console.log('key:' + e.key)
+	console.log('keyCode:' + e.keyCode)
 }
