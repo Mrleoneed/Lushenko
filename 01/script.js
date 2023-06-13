@@ -1,20 +1,23 @@
-const a = {
-	a: 5,
-	b: "Hello",
-	z2: "Hi",
-}
-a.yyyy = 555
-a.b = 'uuu'
-delete a.a
+let a = new Set();
+a.add(1);
+a.add(2);
+a.add(3);
+a.add("Leo");
+a.delete("Leo")
 console.log(a)
-console.log(a.z2)
+console.log(a.size)
+console.log(a.has(2))
+console.log(a.has('2'))
 
-
-a.b = 'uuu'
-delete a.a
-// document.querySelector('.out').innerHTML = a;
-let out = '';
-for (let key in a) {
-	out += key + '---' + a[key] + '<br>'
+for (let item of a) {
+	console.log(item)
 }
-document.querySelector('.out').innerHTML = out
+
+let arr = [1, 2, 3, 4, 5, 6, "Hello", 'bye', 1, 2, 3]
+
+let b = new Set(arr)
+console.log(b)
+console.log(b.size)
+
+let bArr = Array.from(b)
+console.log(bArr)
