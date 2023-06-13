@@ -34,6 +34,9 @@ document.querySelector('.b-2').onclick = f2;
 let s3 = new Set(['one', 'two', 'four']); // обратите внимание, как просто можно добавить массив в набор!
 
 const f3 = () => {
+	let input = document.querySelector('.i-3').value
+	s3.delete(input)
+	console.log(s3)
 }
 
 document.querySelector('.b-3').onclick = f3;
