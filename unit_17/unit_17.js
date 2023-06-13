@@ -161,7 +161,8 @@ document.querySelector('.b-8').onclick = () => {
 let b9 = [3, "hello", 4, "world", 5, "hi"];
 
 function t9() {
-
+	b9_num = b9.filter(e => typeof e === 'number')
+	b9_string = b9.filter(e => typeof e === 'string')
 	return [b9_num, b9_string];
 }
 
