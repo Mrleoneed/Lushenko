@@ -1,15 +1,22 @@
-// document.querySelector('.i-1').onkeypress = (e) => {
-// 	console.log(e)
-// 	console.log('charcode:' + e.charCode)
-// 	console.log('charcode:' + e.code)
-// 	console.log('key:' + e.key)
-// 	console.log('keyCode:' + e.keyCode)
-// }
+document.querySelector('.block-1').addEventListener('touchStart', myTouch);
+document.querySelector('.block-1').addEventListener('touchEnd', myTouchEnd);
+document.querySelector('.block-2').addEventListener('touchMove', myTouchMove);
 
-document.querySelector('.i-1').onkeydown = (e) => {
+function myTouch(event) {
+	console.log(event)
+	console.log('touch')
+	document.querySelector('.out-1').innerHTML += event.touches.length
+	document.querySelector('.out-2').innerHTML += 'work '
+}
 
-	console.log('charcode:' + e.charCode)
-	console.log('charcode:' + e.code)
-	console.log('key:' + e.key)
-	console.log('keyCode:' + e.keyCode)
+function myTouchEnd(event) {
+	document.querySelector('.out-2').innerHTML += 'end '
+}
+
+function myTouchMove(event) {
+	event.preventDefault()
+	console.log(event)
+	document.querySelector('.out-1').innerHTML += event.touches.length
+	document.querySelector('.out-2').innerHTML += 'end '
+	return false
 }

@@ -2,14 +2,15 @@
     text-align: center;
 }
 
-.block {
-    width: 75px;
-    height: 75px;
-    float: left;
-    margin: 25px;
-    border: 2px solid #333;
-}
 
 hr {
     clear: both;
+}
+
+.block-1, .block-2 {
+    width: 100px;
+    height: 100px;
+    border: 3px solid red;
+    margin: 10px;
+
 }
