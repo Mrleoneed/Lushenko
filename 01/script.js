@@ -1,13 +1,41 @@
-let a = [4, 5, 12, 2000, 1, 0, -2]
+document.querySelector('.one').onclick = function (e) {
 
+	console.log('click');
+}
 
-let b = a.map(item => item * 5)
-console.log(b)
+document.querySelector('.two').onclick = function () {
+	console.log('click2');
+}
 
-let c = a.filter((item, index) => {
-	if (item % 2 === 0) {
-		return true;
-	}
-})
+document.querySelector('.two').oncontextmenu = () => {
+	console.log('right button')
+	return false
+}
 
-console.log(c)
+// let w = 75;
+// document.querySelector('.three').onmousemove = () => {
+// 	document.querySelector('.three').style.width = w + 'px'
+// 	w++
+//
+// }
+
+document.querySelector('.three').onmouseenter = () => {
+	document.querySelector('.three').style.background = 'red'
+}
+
+document.querySelector('.three').onmouseleave = () => {
+	document.querySelector('.three').style.background = 'white'
+}
+
+document.querySelector('.three').onmousedown = () => {
+	document.querySelector('.three').style.background = 'pink'
+}
+
+document.querySelector('.three').onmouseup = () => {
+	document.querySelector('.three').style.background = 'yellow'
+}
+p = 10
+document.querySelector('button').onclick = () => {
+	p = p + 10;
+	document.querySelector("progress").value = p
+}
