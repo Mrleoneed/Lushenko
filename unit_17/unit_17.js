@@ -109,7 +109,10 @@ document.querySelector('.b-5').onclick = () => {
 let b6 = [3, 14, 15, 92, "6", "5", "hello", 32];
 
 function t6() {
-
+	b6_res = b6.filter(e => {
+		return typeof e === 'number'
+	})
+	return b6_res
 }
 
 document.querySelector('.b-6').onclick = () => {
